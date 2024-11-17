@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დაგეგმვის აპლიკაცია + თამაში</title>
+    <link rel="stylesheet" href="project4.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>დაგეგმვის აპლიკაცია</h1>
+            <nav>
+                <button id="todoBtn">საქმეთა სია</button>
+                <button id="timerBtn">ტაიმერი</button>
+                <button id="gameBtn">თამაშის დაწყება</button>
+            </nav>
+        </header>
+
+        <section id="todoSection" class="hidden">
+            <h2>საქმეთა სია</h2>
+            <input type="text" id="todoInput" placeholder="დაამატეთ საქმე..." />
+            <button id="addTodoBtn">დამატება</button>
+            <ul id="todoList"></ul>
+        </section>
+
+        <section id="timerSection" class="hidden">
+            <h2>საქმების ტაიმერი</h2>
+            <p id="timer">00:00</p>
+            <button id="startTimerBtn">დაწყება</button>
+            <button id="stopTimerBtn" class="hidden">შეჩერება</button>
+        </section>
+
+        <section id="gameSection" class="hidden">
+            <h2>თამაშის დაწყება</h2>
+            <button id="startGameBtn">თამაშის დაწყება</button>
+            <div id="gameArea" class="hidden">
+                <p>კლიკეთ ქვემოთ განთავსებულ კვანძებზე!</p>
+                <div id="gameBoard">
+                    <!-- Game grid or interactive items will be here -->
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="project4.js"></script>
+</body>
+</html>
